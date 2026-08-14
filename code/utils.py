@@ -1,4 +1,4 @@
-"""Exact copies of functions from the paper's code/utils.py.
+"""functions from the paper's code/utils.py.
 
 Only the functions needed for modifiedOchiai3.1.7 + evaluation are included.
 No my_secrets dependency — paths are passed as arguments.
