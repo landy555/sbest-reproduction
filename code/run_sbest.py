@@ -32,7 +32,7 @@ paths_dict = {
 N_FAKE_FAILING_TESTS = 15
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import paper_utils as utils
+import utils as utils
 
 
 # ============ Cell 3: Reading the coverage data ============
