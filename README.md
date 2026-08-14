@@ -8,7 +8,7 @@ This repository runs **only the core algorithm code** (no data-collection pipeli
 
 - `code/run_sbest.py` — the SBEST algorithm (modifiedOchiai3.1.7), line-by-line port of `8-Ochiai_implementations/modifiedOchiai3.1.7_...ipynb`
 - `code/evaluate.py` — evaluation (Top-K / MAP / MRR), line-by-line port of `9-analyseOchiaiOutputs.ipynb`
-- `code/paper_utils.py` — exact copies of the helper functions from the original `code/utils.py`
+- `code/paper_utils.py` — the helper functions from the original `code/utils.py`
 
 ## Verified results
 
