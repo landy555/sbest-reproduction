@@ -1,0 +1,21 @@
+# Data files — too large for Git, download separately (see README.md)
+# (no trailing slash: must also match the symlinks used during setup)
+data/gzoltar_files
+data/tests_covering_stack_traces_details_per_bug
+
+# Large JSON data — also obtained via the reproduction setup (see README.md)
+data/bug_reports_with_stack_traces_details.json
+data/rq1_results.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Results that can be regenerated
+results/ochiaiScores/
+results/ochiaiRankings/
