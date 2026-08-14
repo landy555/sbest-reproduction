@@ -39,7 +39,6 @@ The reproduction needs three datasets that are **not included in this repo** (to
 
 ### Original repository
 
-- Code & data: https://github.com/SAILResearch/sbest/ (or the arXiv anonymous repo)
 - Paper: https://arxiv.org/abs/2405.00565
 - Data: https://zenodo.org/records/11062413
 
