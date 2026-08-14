@@ -1,6 +1,6 @@
 """functions from the paper's code/utils.py.
 
-Only the functions needed for modifiedOchiai3.1.7 + evaluation are included.
+Only the functions needed for experiment + evaluation are included.
 No my_secrets dependency — paths are passed as arguments.
 """
 
