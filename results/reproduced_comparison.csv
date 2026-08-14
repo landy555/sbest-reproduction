@@ -1,0 +1,103 @@
+section,technique,metric,project,reproduced,paper,diff
+topk,Stack Trace,Top 1,,16,16,0
+topk,Stack Trace,Top 3,,27,27,0
+topk,Stack Trace,Top 5,,34,34,0
+topk,Stack Trace,Top 10,,38,38,0
+topk,modifiedOchiai3.1.7,Top 1,,17,17,0
+topk,modifiedOchiai3.1.7,Top 3,,32,32,0
+topk,modifiedOchiai3.1.7,Top 5,,33,33,0
+topk,modifiedOchiai3.1.7,Top 10,,34,34,0
+topk,originalOchiai,Top 1,,0,0,0
+topk,originalOchiai,Top 3,,1,1,0
+topk,originalOchiai,Top 5,,2,2,0
+topk,originalOchiai,Top 10,,2,2,0
+map,Stack Trace,MAP,Cli,0.6,0.6,0.0
+mrr,Stack Trace,MRR,Cli,0.6,0.6,0.0
+map,modifiedOchiai3.1.7,MAP,Cli,0.6,0.6,0.0
+mrr,modifiedOchiai3.1.7,MRR,Cli,0.6,0.6,0.0
+map,originalOchiai,MAP,Cli,0.00452114323917767,0.00452114323917767,0.0
+mrr,originalOchiai,MRR,Cli,0.00452114323917767,0.00452114323917767,0.0
+map,Stack Trace,MAP,Closure,0.17100694444444445,0.17100694444444445,0.0
+mrr,Stack Trace,MRR,Closure,0.2170138888888889,0.2170138888888889,0.0
+map,modifiedOchiai3.1.7,MAP,Closure,0.1461750075341573,0.1461750075341573,0.0
+mrr,modifiedOchiai3.1.7,MRR,Closure,0.16712425554299923,0.16712425554299923,0.0
+map,originalOchiai,MAP,Closure,0.0006957798802625623,0.0006957798802625623,0.0
+mrr,originalOchiai,MRR,Closure,0.001205424374797247,0.001205424374797247,0.0
+map,Stack Trace,MAP,Codec,0.3333333333333333,0.3333333333333333,0.0
+mrr,Stack Trace,MRR,Codec,1.0,1.0,0.0
+map,modifiedOchiai3.1.7,MAP,Codec,0.5853333333333334,0.5853333333333334,0.0
+mrr,modifiedOchiai3.1.7,MRR,Codec,1.0,1.0,0.0
+map,originalOchiai,MAP,Codec,,,
+mrr,originalOchiai,MRR,Codec,,,
+map,Stack Trace,MAP,Collections,0,0.0,0.0
+mrr,Stack Trace,MRR,Collections,0,0.0,0.0
+map,modifiedOchiai3.1.7,MAP,Collections,0,0.0,0.0
+mrr,modifiedOchiai3.1.7,MRR,Collections,0,0.0,0.0
+map,originalOchiai,MAP,Collections,,,
+mrr,originalOchiai,MRR,Collections,,,
+map,Stack Trace,MAP,Compress,0.4122257053291536,0.4122257053291536,0.0
+mrr,Stack Trace,MRR,Compress,0.44252873563218387,0.44252873563218387,0.0
+map,modifiedOchiai3.1.7,MAP,Compress,0.4620345186082929,0.4620345186082929,0.0
+mrr,modifiedOchiai3.1.7,MRR,Compress,0.49042443064182195,0.49042443064182195,0.0
+map,originalOchiai,MAP,Compress,0.007935566677269783,0.007935566677269783,0.0
+mrr,originalOchiai,MRR,Compress,0.022986004342784163,0.022986004342784163,0.0
+map,Stack Trace,MAP,Csv,0.3333333333333333,0.3333333333333333,0.0
+mrr,Stack Trace,MRR,Csv,0.3333333333333333,0.3333333333333333,0.0
+map,modifiedOchiai3.1.7,MAP,Csv,1.0,1.0,0.0
+mrr,modifiedOchiai3.1.7,MRR,Csv,1.0,1.0,0.0
+map,originalOchiai,MAP,Csv,,,
+mrr,originalOchiai,MRR,Csv,,,
+map,Stack Trace,MAP,Gson,0.5196078431372549,0.5196078431372549,0.0
+mrr,Stack Trace,MRR,Gson,0.5196078431372549,0.5196078431372549,0.0
+map,modifiedOchiai3.1.7,MAP,Gson,0.51010101010101,0.51010101010101,0.0
+mrr,modifiedOchiai3.1.7,MRR,Gson,0.51010101010101,0.51010101010101,0.0
+map,originalOchiai,MAP,Gson,,,
+mrr,originalOchiai,MRR,Gson,,,
+map,Stack Trace,MAP,JacksonCore,0.25,0.25,0.0
+mrr,Stack Trace,MRR,JacksonCore,0.25,0.25,0.0
+map,modifiedOchiai3.1.7,MAP,JacksonCore,0.1608524244967637,0.1608524244967637,0.0
+mrr,modifiedOchiai3.1.7,MRR,JacksonCore,0.16340093729799612,0.16340093729799612,0.0
+map,originalOchiai,MAP,JacksonCore,0.06928235307393699,0.06928235307393699,0.0
+mrr,originalOchiai,MRR,JacksonCore,0.08358159549817941,0.08358159549817941,0.0
+map,Stack Trace,MAP,JacksonDatabind,0.16858974358974357,0.16858974358974357,0.0
+mrr,Stack Trace,MRR,JacksonDatabind,0.2446428571428572,0.2446428571428572,0.0
+map,modifiedOchiai3.1.7,MAP,JacksonDatabind,0.035868213894023095,0.035868213894023095,0.0
+mrr,modifiedOchiai3.1.7,MRR,JacksonDatabind,0.07771527882150443,0.07771527882150443,0.0
+map,originalOchiai,MAP,JacksonDatabind,0.0004868365701363508,0.0004868365701363508,0.0
+mrr,originalOchiai,MRR,JacksonDatabind,0.0005168795214529305,0.0005168795214529305,0.0
+map,Stack Trace,MAP,Jsoup,0.4409722222222222,0.4409722222222222,0.0
+mrr,Stack Trace,MRR,Jsoup,0.4444444444444444,0.4444444444444444,0.0
+map,modifiedOchiai3.1.7,MAP,Jsoup,0.4070461064612814,0.4070461064612814,0.0
+mrr,modifiedOchiai3.1.7,MRR,Jsoup,0.4278794397946148,0.4278794397946148,0.0
+map,originalOchiai,MAP,Jsoup,0.0,0.0,0.0
+mrr,originalOchiai,MRR,Jsoup,0.0,0.0,0.0
+map,Stack Trace,MAP,JxPath,0.3333333333333333,0.3333333333333333,0.0
+mrr,Stack Trace,MRR,JxPath,0.3333333333333333,0.3333333333333333,0.0
+map,modifiedOchiai3.1.7,MAP,JxPath,1.0,1.0,0.0
+mrr,modifiedOchiai3.1.7,MRR,JxPath,1.0,1.0,0.0
+map,originalOchiai,MAP,JxPath,,,
+mrr,originalOchiai,MRR,JxPath,,,
+map,Stack Trace,MAP,Lang,0.4375,0.4375,0.0
+mrr,Stack Trace,MRR,Lang,0.4375,0.4375,0.0
+map,modifiedOchiai3.1.7,MAP,Lang,0.5835303388494877,0.5835303388494877,0.0
+mrr,modifiedOchiai3.1.7,MRR,Lang,0.5835303388494877,0.5835303388494877,0.0
+map,originalOchiai,MAP,Lang,0.0007561586183202172,0.0007561586183202172,0.0
+mrr,originalOchiai,MRR,Lang,0.0007561586183202172,0.0007561586183202172,0.0
+map,Stack Trace,MAP,Math,0.22152777777777777,0.22152777777777777,0.0
+mrr,Stack Trace,MRR,Math,0.4583333333333333,0.4583333333333333,0.0
+map,modifiedOchiai3.1.7,MAP,Math,0.13724403369910657,0.13724403369910657,0.0
+mrr,modifiedOchiai3.1.7,MRR,Math,0.34722222222222215,0.34722222222222215,0.0
+map,originalOchiai,MAP,Math,0.00020547141012093462,0.00020547141012093462,0.0
+mrr,originalOchiai,MRR,Math,0.00011741223435481978,0.00011741223435481978,0.0
+map,Stack Trace,MAP,Mockito,0.023809523809523808,0.023809523809523808,0.0
+mrr,Stack Trace,MRR,Mockito,0.16666666666666666,0.16666666666666666,0.0
+map,modifiedOchiai3.1.7,MAP,Mockito,0.037098759101630595,0.037098759101630595,0.0
+mrr,modifiedOchiai3.1.7,MRR,Mockito,0.25,0.25,0.0
+map,originalOchiai,MAP,Mockito,0.005989762466349407,0.005989762466349407,0.0
+mrr,originalOchiai,MRR,Mockito,0.02814354222547346,0.02814354222547346,0.0
+map,Stack Trace,MAP,Time,0.29166666666666663,0.29166666666666663,0.0
+mrr,Stack Trace,MRR,Time,0.29166666666666663,0.29166666666666663,0.0
+map,modifiedOchiai3.1.7,MAP,Time,0.3333333333333333,0.3333333333333333,0.0
+mrr,modifiedOchiai3.1.7,MRR,Time,0.3333333333333333,0.3333333333333333,0.0
+map,originalOchiai,MAP,Time,0.0003343933731854645,0.0003343933731854645,0.0
+mrr,originalOchiai,MRR,Time,0.0003343933731854645,0.0003343933731854645,0.0
