@@ -32,7 +32,7 @@ paths_dict = {
 N_FAKE_FAILING_TESTS = 15
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import utils as utils
+import utils
 
 
 # ============ Cell 3: Reading the coverage data ============
@@ -114,7 +114,7 @@ for project in coverage_data.keys():
         num_lines_covered_per_test = {}
         for index, st_file in enumerate(stack_trace_files_first_5):
             st_method = stack_trace_methods_first_5[index].split(".")[-1]
-            st_file_complete_name = utils.find_file_complete_name(st_file, bug_data)
+            st_file_complete_name = utils.find_file_complete_name(st_file, bug_data) # 双重守卫
             if st_file_complete_name:
                 if st_method in bug_data["stackTraceMethodsDetails"][st_file_complete_name].keys() and \
                    "tests_covering_the_method" in tests_covering_stack_traces_details[st_file_complete_name][st_method].keys():
@@ -124,7 +124,7 @@ for project in coverage_data.keys():
                             stack_traces_methods_test_count[test] += 1
                             num_lines_covered_per_test[test] += num_lines
                         else:
-                            stack_traces_methods_test_count[test] = 1
+                            stack_traces_methods_test_count[test] = 1    # 首次出现
                             num_lines_covered_per_test[test] = num_lines
 
         coverage["fake_test_results"] = [True for _ in coverage["test_results"]]
@@ -151,7 +151,7 @@ for project in coverage_data.keys():
                 print("Storing the fake test results")
                 utils.store_fake_test_results(coverage, project, bug_id, paths_dict["gzoltar_files_path"], paths_dict["fake_test_results_file_name"])
 
-                print("* Part 4 - Executing Ochiai")
+                print("* Part 3 - Executing Ochiai")
                 for index_m, method_name in enumerate(coverage["methods_obj_list"]):
                     n00 = 0
                     n01 = 0
@@ -171,7 +171,7 @@ for project in coverage_data.keys():
                                 n00 += 1
                     try:
                         s_o = n11 / math.sqrt((n11 + n01) * (n11 + n10))
-                    except ZeroDivisionError:
+                    except ZeroDivisionError:    # 防除零
                         s_o = 0
                     methods_ochiai_scores[method_name] = s_o
 
@@ -189,12 +189,13 @@ for project in coverage_data.keys():
             score = 1 / (index + 1)
             if index > 9:
                 score = 0.1
-            if '#' not in st_method:
+
+            if '#' not in st_method:       # 名字归一化
                 last_dot_index = st_method.rfind('.')
                 if last_dot_index != -1:
                     st_method_id = st_method[:last_dot_index] + '#' + st_method[last_dot_index + 1:]
             for method in methods_ochiai_scores:
-                if method.endswith(st_method_id):
+                if method.endswith(st_method_id):       # 后缀匹配
                     methods_ochiai_scores[method] += score
                     found = True
                     break
@@ -204,6 +205,7 @@ for project in coverage_data.keys():
         if project not in fake_failing_tests_info.keys():
             fake_failing_tests_info[project] = {}
 
+        # Store the number of fake passing and failing tests for this bug
         fake_failing_tests_info[project][bug_id] = {}
         fake_failing_tests_info[project][bug_id]["fake_passing_tests_number"] = len(coverage["fake_test_results"]) - number_of_failing_tests
         fake_failing_tests_info[project][bug_id]["fake_failing_tests_number"] = number_of_failing_tests

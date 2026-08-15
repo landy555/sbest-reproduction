@@ -29,7 +29,7 @@ paths_dict = {
 }
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import paper_utils as utils
+import utils
 
 
 # ============ Phase 1: Reading the coverage data ============

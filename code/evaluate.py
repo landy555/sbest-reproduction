@@ -33,7 +33,7 @@ paths_dict = {
 }
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import paper_utils as utils
+import utils
 
 problematic_bugs = ["Mockito_17", "Mockito_22", "Mockito_25", "Mockito_30", "Mockito_31", "Mockito_35"]
 top_k = [1, 3, 5, 10]
