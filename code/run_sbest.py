@@ -190,12 +190,12 @@ for project in coverage_data.keys():
             if index > 9:
                 score = 0.1
 
-            if '#' not in st_method:       # 名字归一化
+            if '#' not in st_method:       # Name normalization
                 last_dot_index = st_method.rfind('.')
                 if last_dot_index != -1:
                     st_method_id = st_method[:last_dot_index] + '#' + st_method[last_dot_index + 1:]
             for method in methods_ochiai_scores:
-                if method.endswith(st_method_id):       # 后缀匹配
+                if method.endswith(st_method_id):       # Suffix matching
                     methods_ochiai_scores[method] += score
                     found = True
                     break
