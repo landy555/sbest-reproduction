@@ -114,8 +114,8 @@ for project in coverage_data.keys():
         num_lines_covered_per_test = {}
         for index, st_file in enumerate(stack_trace_files_first_5):
             st_method = stack_trace_methods_first_5[index].split(".")[-1]
-            st_file_complete_name = utils.find_file_complete_name(st_file, bug_data) # 双重守卫
-            if st_file_complete_name:
+            st_file_complete_name = utils.find_file_complete_name(st_file, bug_data) 
+            if st_file_complete_name:     # Double-checked locking
                 if st_method in bug_data["stackTraceMethodsDetails"][st_file_complete_name].keys() and \
                    "tests_covering_the_method" in tests_covering_stack_traces_details[st_file_complete_name][st_method].keys():
                     for test in tests_covering_stack_traces_details[st_file_complete_name][st_method]["tests_covering_the_method"]:
@@ -124,7 +124,7 @@ for project in coverage_data.keys():
                             stack_traces_methods_test_count[test] += 1
                             num_lines_covered_per_test[test] += num_lines
                         else:
-                            stack_traces_methods_test_count[test] = 1    # 首次出现
+                            stack_traces_methods_test_count[test] = 1    # Initial occurrence
                             num_lines_covered_per_test[test] = num_lines
 
         coverage["fake_test_results"] = [True for _ in coverage["test_results"]]
